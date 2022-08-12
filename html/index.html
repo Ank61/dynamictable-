@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<script src="https://kit.fontawesome.com/72c30b7157.js" crossorigin="anonymous"></script>
+       
+    </head>
+    <body>
+        <form method="post" id = 'myForm' onsubmit="(e)=>e.preventDefault()">
+            <!-- <input type="number" placeholder="id" name = "id" id = "id"><br><br>
+            <input type="number" placeholder="p_id" name="emp_id" id="emp_id" ><br><br>
+            <input type="text" placeholder="p_name" name="name" id = "name"><br><br>
+            <input type="number" placeholder="p_cost" name="time" id="time" ><br><br>
+            <input type="submit" id = "send" value="Send">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="submit" id="update" value="Update">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
+            <!-- <input type="submit" id="delete" value="Delete"><br><br> -->
+        </form>
+        <button class="btn btn-lg btn-dark"  style="margin-left:800px ; border-radius: 30px; width:120px; margin-top: 30px; "  id = "getData">Get Data</button>
+        <button class="btn btn-lg btn-dark"  style="margin-left:20px ; border-radius: 30px; width:90px ; margin-top: 30px;"    data-toggle = 'modal'
+
+        data-target = '#my_division2'>Add</button>
+        <div id = "my_division2" 
+
+             class="modal fade"
+
+             data-keyboard = 'false'
+
+             data-backdrop = 'static'>
+
+            <div class="modal-dialog modal-sm modal-dialog-centered">
+
+                <div class="modal-content">
+
+                    <div class="modal-header">
+
+                        <p class="h5 modal-title">Employee Table </p>
+
+                        <button data-dismiss = 'modal' class="close">&times;</button>
+
+                    </div>
+
+                    <div class="modal-body">
+
+                        <form method="post" id = 'myForm' onsubmit="(e)=>e.preventDefault()">
+
+                            <div class="form-group">
+
+                                <label>S.No</label>
+
+                                <input type="number" name = "id" id = "id" class="form-control">
+
+                            </div>
+
+                            <div class="form-group">
+
+                                <label>Employee Id</label>
+
+                                <input type="number"  name="emp_id" id="emp_id"  class="form-control">
+
+                            </div>
+
+                            <div class="form-group">
+
+                                <label>Employee Name</label>
+
+                                <input type="text" name="name" id = "name" class="form-control">
+
+                            </div>
+                            <div class="form-group">
+
+                                <label>Time In</label>
+
+                                <input type="number"  name="time" id="time" class="form-control">
+
+                            </div>
+                        </form>
+
+                    </div>
+
+                    <div class="modal-footer">
+
+                        <input type="submit" class="btn btn-success "    data-dismiss = 'modal' class="close" value="Save" id = "send" >
+
+                        <input type="submit" class="btn btn-danger"  data-dismiss = 'modal' class="close"   value ="Cancel">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <h4  id = op></h4>
+
+
+<div >
+        <div id = "my_division" 
+
+             class="modal fade"
+
+             data-keyboard = 'false'
+
+             data-backdrop = 'static'>
+
+            <div class="modal-dialog modal-sm modal-dialog-centered">
+
+                <div class="modal-content">
+
+                    <div class="modal-header">
+
+                        <p class="h5 modal-title">Edit Table </p>
+
+                        <button data-dismiss = 'modal' class="close">&times;</button>
+
+                    </div>
+
+                    <div class="modal-body">
+
+                        <form  method="post" id = 'myForm' onsubmit="(e)=>e.preventDefault()">
+                            <div class="form-group">
+
+                                <label>S.No</label>
+
+                                <input type="number" name = "id" id = "2id" class="form-control">
+
+                            </div>
+
+                            <div class="form-group">
+
+                                <label>Employee ID</label>
+
+                                <input type="number"  name="emp_id" id="2emp_id"  class="form-control">
+
+                            </div>
+                            
+
+                            <div class="form-group">
+
+                                <label>Employee Name</label>
+
+                                <input type="text" name="name" id = "2name" class="form-control">
+
+                            </div>
+
+                            <div class="form-group">
+
+                                <label>Time In</label>
+
+                                <input type="number"  name="time" id="2time" class="form-control">
+
+                            </div>
+
+                        </form>
+
+                    </div>
+
+                    <div class="modal-footer">
+
+                        <input type="submit" class="btn btn-success"   data-dismiss = 'modal' class="close"  id="update"  value="Update"  >
+
+                        <button class="btn btn-danger" data-dismiss = 'modal' data-dismiss = 'modal' class="close" >Cancel</button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <script src="../js/script.js"></script>
+        
+    </div>
+    </body>
+</html>
